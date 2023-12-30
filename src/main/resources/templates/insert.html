@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Add new Restaurant to bucket list</title>
+    <link rel="stylesheet" href="restaurants-main.css">
+</head>
+<body>
+<form th:action="@{'/restaurants/restaurants.html'}" method="post">
+    <label>Name: <input type="text" name="name"></label><br>
+    <label>City: <input type="text" name="city"></label><br>
+    <label>Cuisine: <input type="text" name="cuisine"></label><br>
+    <button type="submit">Add to bucketlist</button>
+</form>
+
+</body>
+</html>

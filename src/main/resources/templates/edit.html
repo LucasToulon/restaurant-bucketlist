@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Restaurant Data</title>
+    <link rel="stylesheet" href="restaurants-main.css">
+</head>
+<body>
+<form th:action="@{'/restaurants/edit/' + restaurant.id}" method="put">
+    <input type="hidden" name="id" th:value="${restaurant.id}">
+    <label>Name: <input type="text" name="name" th:value="${restaurant.name}"></label><br>
+    <label>City: <input type="text" name="city" th:value="${restaurant.city}"></label><br>
+    <label>Cuisine: <input type="text" name="cuisine" th:value="${restaurant.cuisine}"></label><br>
+    <button type="submit">Update restaurant</button>
+</form>
+</body>
+</html>

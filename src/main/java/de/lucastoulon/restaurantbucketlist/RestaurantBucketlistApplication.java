@@ -9,7 +9,7 @@ public class RestaurantBucketlistApplication {
     public static void main(String[] args) {
 
         SpringApplication.run(RestaurantBucketlistApplication.class, args);
-        //TODO: set up API, DB etc
+
     }
 
 }

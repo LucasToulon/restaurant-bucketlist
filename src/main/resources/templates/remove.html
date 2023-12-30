@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Remove restaurant from list</title>
+    <link rel="stylesheet" href="restaurants-main.css">
+</head>
+<body>
+<form th:action="@{'/restaurants/delete/' + restaurant.id}" method="post">
+    <input type="hidden" name="id" th:value="${restaurant.id}">
+    <p>Do you want to cross off this restaurant? </p>
+    <button type="submit">Yes</button>
+    <a th:href="@{'/restaurants'}">No</a>
+</form>
+
+</body>
+</html>
